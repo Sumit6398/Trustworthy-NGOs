@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustworthy NGOs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Trustworthy NGOs & Institutions</h1>
+    <input type="text" id="searchInput" placeholder="Search for an NGO..." oninput="searchNGO()">
+</header>
+
+<!-- Filter Section -->
+<section id="filter">
+    <div class="filter-options">
+        <button onclick="filterCategory('all')">All</button>
+        <button onclick="filterCategory('environment')">Environment</button>
+        <button onclick="filterCategory('health')">Health</button>
+        <button onclick="filterCategory('education')">Education</button>
+    </div>
+</section>
+
+<!-- Horizontally Scrollable NGO List Section -->
+<section id="ngos">
+    <h2>NGOs We Trust</h2>
+    <div class="ngo-list">
+
+        <!-- Environment NGOs -->
+        <div class="ngo-item environment">
+            <h3>World Wildlife Fund (WWF)</h3>
+            <p>Conserving nature and reducing threats to biodiversity.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('WWF')">Learn More</button>
+                <button onclick="donate('WWF')">Donate</button>
+            </div>
+        </div>
+
+        <div class="ngo-item environment">
+            <h3>Greenpeace</h3>
+            <p>Defending the natural world and promoting peace.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('Greenpeace')">Learn More</button>
+                <button onclick="donate('Greenpeace')">Donate</button>
+            </div>
+        </div>
+
+        <div class="ngo-item environment">
+            <h3>Earthwatch</h3>
+            <p>Bringing individuals from all walks of life together to fight for the environment.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('Earthwatch')">Learn More</button>
+                <button onclick="donate('Earthwatch')">Donate</button>
+            </div>
+        </div>
+
+        <!-- Health NGOs -->
+        <div class="ngo-item health">
+            <h3>Doctors Without Borders</h3>
+            <p>Providing medical care where it’s needed most.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('Doctors Without Borders')">Learn More</button>
+                <button onclick="donate('Doctors Without Borders')">Donate</button>
+            </div>
+        </div>
+
+        <div class="ngo-item health">
+            <h3>American Red Cross</h3>
+            <p>Preventing and alleviating human suffering in emergencies.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('American Red Cross')">Learn More</button>
+                <button onclick="donate('American Red Cross')">Donate</button>
+            </div>
+        </div>
+
+        <div class="ngo-item health">
+            <h3>Global Health Corps</h3>
+            <p>Mobilizing the next generation of health leaders.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('Global Health Corps')">Learn More</button>
+                <button onclick="donate('Global Health Corps')">Donate</button>
+            </div>
+        </div>
+
+        <!-- Education NGOs -->
+        <div class="ngo-item education">
+            <h3>Room to Read</h3>
+            <p>Promoting literacy and gender equality in education.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('Room to Read')">Learn More</button>
+                <button onclick="donate('Room to Read')">Donate</button>
+            </div>
+        </div>
+
+        <div class="ngo-item education">
+            <h3>Teach For All</h3>
+            <p>Expanding educational opportunity around the world.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('Teach For All')">Learn More</button>
+                <button onclick="donate('Teach For All')">Donate</button>
+            </div>
+        </div>
+
+        <div class="ngo-item education">
+            <h3>Pratham</h3>
+            <p>Providing quality education to underprivileged children in India.</p>
+            <div class="btn-group">
+                <button onclick="learnMore('Pratham')">Learn More</button>
+                <button onclick="donate('Pratham')">Donate</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div class="ngo-item environment">
+    <h3>World Wildlife Fund (WWF)</h3>
+    <p>Conserving nature and reducing threats to biodiversity.</p>
+    <div class="btn-group">
+        <button onclick="learnMore('WWF')">Learn More</button>
+        <button onclick="donate('WWF')">Donate</button>
+    </div>
+</div>
+
+<!-- Newsletter Subscription -->
+<section id="subscribe">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="newsletterForm">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Trustworthy NGOs. All Rights Reserved.</p>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()">&#9650;</button>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+#searchInput {
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Filter Section */
+#filter {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-options button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28A745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-options button:hover {
+    background-color: #218838;
+}
+
+/* Horizontally Scrollable NGOs Section */
+.ngo-list {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+}
+.ngo-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-width: 300px; /* Ensures each item takes up minimum space */
+    flex-shrink: 0;
+}
+
+.ngo-item:hover {
+    transform: scale(1.05);
+}
+
+.ngo-item h3 {
+    color: #333;
+}
+
+.ngo-item p {
+    color: #666;
+}
+
+.btn-group button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Newsletter Subscription */
+#subscribe {
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    margin: 40px 0;
+}
+
+#subscribe input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#subscribe button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF5733;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
